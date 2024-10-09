@@ -3,47 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Document</title>
 </head>
+<style>
+    input {
+        width: 300px; 
+        height: 40px; 
+        font-size: 14px;
+    }
+    button {
+        width: 300px; 
+        height: 45px;
+    }
+</style>
 <body>
-    <h1>My CV</h1>
-    <section>
-        <p style="font-size: 28px;"><strong>Name:</strong> Andrew Holovko</p>
-        <div>
-            <p style="width: 100px; text-align: center;">S<br>O<br>C<br>I<br>A<br>L<br>S</p>
-            <a href="https://www.instagram.com/drape.id/"><img src="./images/inst.png" alt="inst" width="50px"></a>
-            <a href="https://t.me/DrapeID"><img src="./images/tg.png" alt="tg" width="50px"></a>
-            <p style="font-size: 14px; color: red;">you can click on it</p>
-        </div>
-        <h2>Languages:</h2>
-        <ol style="font-size: 20px;">
-            <li>English - <strong>B2</strong></li>
-            <li>Ukrainian - <strong>C2</strong></li>
-            <li>Spanish - <strong>A2</strong></li>
-        </ol>
-    </section>
-    <section>
-        <h2>Education:</h2>
-        <ul style="font-size: 20px;">
-            <li>Gymnasium num.4</li>
-            <li><a href="https://college.suitt.edu.ua/">College of communication and informatization</a></li>
-            <li><a href="https://suitt.edu.ua/">State University of Intellectual Technologies and Communications</a><span style="color: red;">(currently studying)</span></li>
-        </ul>
-    </section>
-    <section>
-        <h2>Hobbys:</h2>
-        <table border="2px">
-            <tr style="text-align: center; font-size: 20px;">
-                <th>Cars</th>
-                <th>Music</th>
-                <th>Games</th>
-            </tr>
-            <tr>
-                <th><img width="80px" src="./images/audi.png" alt=""></th>
-                <th><img width="80px" src="./images/music.png" alt=""></th>
-                <th><img width="80px" src="./images/game.png" alt=""></th>
-            </tr>
-        </table>
-    </section>
+    <div style="height: 656px; width: 500px; text-align: center;">
+        <h1 style="font-size: 20px;">Login | <span style="color: #46A358;">Register</span></h1><br>
+        <h2 style="font-size: 13px;">Enter your email and password to register.</h2>
+        <input type="text" placeholder="Username">
+        <br><br>
+        <input type="email" placeholder="Enter your email address">
+        <br><br>
+        <input type="password" placeholder="Password">
+        <br><br>
+        <input type="password" placeholder="Confirm Password">
+        <div style="height: 30px;"></div>
+        <button type="submit">Register</button>
+        <div style="height: 20px;"></div>
+        <h2 style="font-size: 13px;">Or register with</h2>
+        <div style="height: 20px;"></div>
+        <button type="submit"><img src="./images/google.svg" alt="google">Continue with Google</button>
+        <br><br>
+        <button type="submit"><img src="./images/facebook.svg" alt="facebook">Continue with Facebook</button>
+    </div>
 </body>
 </html>
