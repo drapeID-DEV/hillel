@@ -47,50 +47,30 @@ td {
     padding: 10px;
 }
 
+.boldText {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .nameOfRow {
-    font-size: 16px;
-    font-weight: 600;
-    color: #667085;
     padding-right: 190px;
+    color: #667085;
 }
 
-.qtyCol {
+.alignEnd {
     text-align: end;
-}
-
-#qty {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.priceCol {
-    text-align: end;
-}
-
-#price {
-    text-align: end;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-#total {
-    text-align: end;
-    font-size: 16px;
-    font-weight: 600;
 }
 
 .bottomLogo {
-    padding-top: 40px; padding-bottom: 0px;
-}
-
-.corpName {
-    font-size: 16px; font-weight: 600;
+    padding-top: 40px;
+    padding-bottom: 0px;
 }
 
 .addres {
-    text-align: end; font-size: 16px; font-weight: 600; color: #667085;
+    text-align: end;
+    color: #667085;
 }
 
 .phrase {
-    font-size: 16px; font-weight: 600; color: #667085;
+    color: #667085;
 }
