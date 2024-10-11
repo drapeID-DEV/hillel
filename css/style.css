@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    align-content: center;
+    background-color: #667085;
+}
+
+div {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+}
+
+.view {
+    font-size: 14px;
+    font-weight: 400;
+    color: #98A2B3;
+    margin: 0 250px;
+}
+
+.image {
+    margin: 20px 240px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 600px
+}
+
+.borderLine {
+    border-bottom: 1px #667085 solid;
+}
+
+td {
+    padding: 10px;
+}
+
+.nameOfRow {
+    font-size: 16px;
+    font-weight: 600;
+    color: #667085;
+    padding-right: 190px;
+}
+
+.qtyCol {
+    text-align: end;
+}
+
+#qty {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.priceCol {
+    text-align: end;
+}
+
+#price {
+    text-align: end;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#total {
+    text-align: end;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bottomLogo {
+    padding-top: 40px; padding-bottom: 0px;
+}
+
+.corpName {
+    font-size: 16px; font-weight: 600;
+}
+
+.addres {
+    text-align: end; font-size: 16px; font-weight: 600; color: #667085;
+}
+
+.phrase {
+    font-size: 16px; font-weight: 600; color: #667085;
+}
