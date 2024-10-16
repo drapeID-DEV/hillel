@@ -1,0 +1,130 @@
+body {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+
+    font-size: 0px;
+    max-width: 1200px;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-bottom: 1px solid #46A35880;
+}
+
+.menu {
+    display: inline-block;
+    width: calc(100% - 250px);
+    text-align: center;
+}
+
+.navElement {
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.11px;
+    text-align: left;
+    margin: 0 25px;
+}
+
+.selected {
+    color: #3D3D3D;
+    font-weight: 700;
+    border-bottom: 3px solid #46A358;
+    padding-bottom: 15px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.loginBtn {
+    color: white;
+    background-color: #46A358;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.11px;
+    border: 0px;
+    border-radius: 6px;
+}
+
+.mainContent {
+    max-width: 1200px;
+    height: 450px;
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 200px;
+}
+
+.textContainer {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    padding-left: 60px;
+}
+
+.welcome {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.mainText {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    margin: 10px 0;
+}
+
+.green {
+    color: #46A358;
+}
+
+.paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.shopBtn {
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #46A358;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 10px;
+}
+
+.imageContainer {
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    background-image: url(/images/flower.png);
+}
+
+.flower {
+    display: block;
+    height: 30%;
+    margin: 295px 0 0 50px;
+}
