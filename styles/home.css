@@ -1,0 +1,126 @@
+body {
+    font-family: 'Cera Pro';
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 53px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-bottom: 1px solid #46A35880;
+}
+
+.navElement {
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.11px;
+    text-align: left;
+    margin: 0 25px;
+    padding-bottom: 15px;
+}
+
+.navElement:hover {
+    font-weight: 700;
+    border-bottom: 3px solid #46A358;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.loginBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 15px;
+    color: white;
+    background-color: #46A358;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.11px;
+    border: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.mainContent {
+    display: flex;
+    max-width: 1200px;
+    height: 450px;
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.textContainer {
+    width: 50%;
+    height: 100%;
+    margin: 60px 40px;
+}
+
+.welcome {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    margin: 0 0 7px 0;
+}
+
+.mainText {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    margin: 0;
+}
+
+.green {
+    color: #46A358;
+}
+
+.paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 5px 0 40px 0;
+}
+
+.shopBtn {
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #46A358;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 10px;
+}
+
+.imageContainer {
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    background-image: url(../images/flower.png);
+}
+
+.flower {
+    display: block;
+    height: 30%;
+    margin: 295px 0 0 50px;
+}

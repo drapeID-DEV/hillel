@@ -13,20 +13,14 @@ a {
     color:#3D3D3D;
 }
 
-.clear-float::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .container {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 170px;
 }
 
 .container .categories-container {
-    float: left;
     width: 30%;
 }
 
@@ -55,18 +49,24 @@ a {
 }
 
 .container .content {
-    float: right;
     width: 70%;
     height: 1245px;
-    margin-bottom: 100px;
 }
 
 header {
+    display: flex;
     height: 23px;
     margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.tabs {
+    display: flex;
 }
 
 .head-btn {
+    text-align: center;
+    min-width: 100px;
     margin-right: 40px;
     padding-bottom: 5px;
 }
@@ -85,28 +85,17 @@ header {
     border: 0;
 }
 
-.content .tabs {
-    float: left;
-}
-
-.content .filters {
-    float: right;
-}
-
 .products-container {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
 }
 
 .product {
     height: 350px;
     width: 253px;
-    float: left;
     margin-bottom: 70px;
-    margin-right: 40px;
-}
-
-.product:nth-child(3n) {
-    margin-right: 0px;
 }
 
 .image-container {
@@ -133,10 +122,14 @@ header {
     line-height: 16px;
 }
 
+.pages-container {
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
 .pages {
-    width: 220px;
+    width: 225px;
     margin-left: auto;
-    margin-bottom: 80px;
 }
 
 .page-btn {
@@ -152,7 +145,7 @@ header {
 }
 
 .page-btn:hover {
-    border: 0;
+    border: 1px solid transparent;
     color: white;
     font-size: 18px;
     font-weight: 700;
