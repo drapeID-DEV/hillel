@@ -1,0 +1,160 @@
+body {
+    font-family: 'Cera Pro';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 70px 0 140px 0;
+}
+
+.summer-cactus {
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+    height: 300px;
+    max-width: 585px;
+}
+
+.styling-trends {
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+    height: 300px;
+    max-width: 585px;
+}
+
+.offer-image {
+    height: 290px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.offer-header {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+.offer-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: end;
+    color: #727272;
+    margin-bottom: 25px;
+}
+
+.offer-btn {
+    margin-left: auto;
+    padding: 10px 25px;
+    background-color: #46A358;
+    border-radius: 6px;
+    color: white;
+}
+
+.find-arrow {
+    color: white;
+}
+
+.blog-container {
+    margin-bottom: 70px;
+}
+
+.blog-posts {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.about-shop {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #727272;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    background-color: #FBFBFB;
+    max-width: 268px;
+}
+
+.blog-text {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #46A358;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.blog-name {
+    color: #3D3D3D;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.blog-paragraph {
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.blog-btn{
+    color: #3D3D3D;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.blog-btn:hover {
+    color: #46A358;
+    .read-arrow {
+        color: #46A358;
+    }
+}
+
+.read-arrow {
+    color: #3D3D3D;
+}
