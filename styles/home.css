@@ -60,15 +60,17 @@ header {
     display: none;
     position: absolute;
     padding-top: 12px;
-    left: -100px;
+    left: -70px;
     top: 36px;
     font-size: 16px;
     font-weight: 400;
+    width: 190px;
 }
 
 .drop-menu-list {
     list-style: none;
     position: relative;
+    padding: 0;
 }
 
 .drop-menu-element {
@@ -93,7 +95,7 @@ header {
     position: absolute;
     list-style: none;
     top: 0;
-    left: 258px;
+    left: 218px;
     padding-left: 2px;
     font-size: 16px;
     font-weight: 400;
