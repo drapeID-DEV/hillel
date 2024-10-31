@@ -24,9 +24,14 @@ header {
     font-size: 16px;
     font-weight: 400;
     line-height: 20.11px;
-    text-align: left;
-    margin: 0 25px;
     padding-bottom: 15px;
+    
+}
+
+.navBtn {
+    text-align: center;
+    margin: 0 25px;
+    width: 80px;
 }
 
 .navElement:hover {
@@ -34,10 +39,70 @@ header {
     border-bottom: 3px solid #46A358;
 }
 
-ul {
+.navigation-list {
     list-style: none;
     display: flex;
     padding: 0;
+}
+
+
+.navBtn:nth-child(3) {
+    position: relative;
+}
+
+.navBtn:nth-child(3):hover {
+    .drop-menu {
+        display: block;
+    }
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    padding-top: 12px;
+    left: -100px;
+    top: 36px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.drop-menu-list {
+    list-style: none;
+    position: relative;
+}
+
+.drop-menu-element {
+    display: flex;
+    color: #3D3D3D;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    height: 35px;
+    width: 188px;
+    background-color: #EDF6EE;
+}
+
+.drop-menu-element:hover {
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #1A712A;
+}
+
+.second-drop-menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 0;
+    left: 258px;
+    padding-left: 2px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.show-second-menu:hover {
+    .second-drop-menu {
+        display: block;
+    }
 }
 
 .loginBtn {
