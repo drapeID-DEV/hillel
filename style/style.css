@@ -156,6 +156,7 @@ ul {
 
 .items-amount {
     color: #fff;
+    min-width: 15px;
     font-size: 10px;
     font-weight: 500;
     line-height: 12.57px;
@@ -163,10 +164,10 @@ ul {
     position: absolute;
     align-items: center;
     justify-content: center;
+    padding: 1px;
     border-radius: 50%;
     background-color: #46A358;
     border: 2px solid #FFFFFF;
-    padding: 2px;
     bottom: 10px;
     left: 16px;
 }
