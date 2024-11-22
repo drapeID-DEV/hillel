@@ -123,6 +123,10 @@ button {
   color: #fff;
 }
 
+.logo_btn {
+  max-height: fit-content;
+}
+
 .mobile_navigation {
   z-index: 100;
   display: flex;

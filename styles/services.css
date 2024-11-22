@@ -73,6 +73,10 @@ button {
   color: #fff;
 }
 
+.logo_btn {
+  max-height: fit-content;
+}
+
 .logo_btn_container {
   display: flex;
 }
