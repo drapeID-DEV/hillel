@@ -16,7 +16,7 @@ const cssnano = require("cssnano");
 const paths = { 
   html: { 
     src: ["./app/**/*.html"], 
-    dest: "./dist/", 
+    dest: "./", 
   }, 
   images: { 
     src: ["./app/images/**/*"], 

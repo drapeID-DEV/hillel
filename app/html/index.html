@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/services.min.css">
-    <title>Hillel services</title>
+    <link rel="stylesheet" href="../scss/styles.css">
+    <title>Hlegal</title>
 </head>
 <body>
     <div class="background_wrapper">
         <section class="header">
-            <div class="logo_btn_container">
-                <a class="logo_btn" href="#">
-                    <img src="../images/Logo.svg" alt="">
-                </a>
-                <p class="page_name">services</p>
-            </div>
+            <a class="logo_btn" href="#">
+                <img src="../images/Logo.svg" alt="">
+            </a>
             <div class="header_block">
                 <div class="header_info">
                     <div class="languages_container">
@@ -37,12 +35,9 @@
                     </a>
                 </div>
                 <div class="mobile_navigation">
-                    <div class="mobile_logo_container">
-                        <a class="logo_btn" href="#">
-                            <img class="logo_btn_image" src="../images/Logo.svg" alt="">
-                        </a>
-                        <p class="page_name">services</p>
-                    </div>
+                    <a class="mobile_logo" href="#">
+                        <img src="../images/Logo.svg" alt="">
+                    </a>
                     <a class="buger_menu" href="">
                         <img src="../images/Hamburger.svg" alt="burger_menu">
                     </a>
@@ -60,8 +55,42 @@
                 </div>
             </div>
         </section>
+        <div class="h_logo_container">
+            <p class="h_logo_text">you legal solutions provider</p>
+            <a class="scroll_btn" href="">
+                <svg class="scroll_svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_22728_11340)">
+                    <circle opacity="0.5" cx="21" cy="21" r="20" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 18L21 27L30 18" stroke="currentColor" stroke-width="2"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_22728_11340">
+                    <rect width="42" height="42" fill="currentColor"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
         <div class="container">
+            <section class="experience">
+                <ul class="experience_list">
+                    <li><button class="experience_list_item experience_list_item_active">Consistent</button></li>
+                    <li><button class="experience_list_item">Customer oriented</button></li>
+                    <li><button class="experience_list_item">Innovative</button></li>
+                    <li><button class="experience_list_item">Business oriented</button></li>
+                </ul>
+                <div class="experience_info">
+                    <h3 class="experience_header">We turn the idea of legal services</h3>
+                    <p class="experience_text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                </div>
+            </section>
             <section class="services">
+                <a class="page_link service_page_link" href="./service.html">
+                    services
+                    <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1L6 5.5L1.5 10" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </a>
                 <h1 class="services_header">
                     What can we do better than others?
                 </h1>
@@ -106,6 +135,29 @@
     <div class="shadow_2">
         <div></div>
     </div>
+    <div class="container">
+        <section class="team">
+            <div class="team_container">
+                <div class="face_image"></div>
+                <div class="team_info">
+                    <a class="page_link team_page_link" href="">
+                        команда
+                        <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L6 5.5L1.5 10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <h3 class="team_text">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
+                    <p class="team_member">Олександр Олександровський</p>
+                    <p class="member_position">Керуючий партнер</p>
+                </div>
+            </div>
+            <div class="slider_controls">
+                <button class="slider_button"></button>
+                <button class="slider_button"></button>
+                <button class="slider_button"></button>
+            </div>
+        </section>
+    </div>
     <section class="clients">
         <h3 class="clients_header">They already trust us</h3>
         <div class="clients_container">
@@ -144,6 +196,46 @@
             </div>
             <div class="client_card">
                 <img class="client_logo" src="../images/client12.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="publications">
+        <div class="container">
+            <a class="page_link publ_page_link" href="#">
+                Publications
+                <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 1L6 5.5L1.5 10" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </a>
+            <h3 class="publications_header">We have something to tell</h3>
+            <div class="publ_cards_container">
+                <div class="publication_card">
+                    <div class="publ_image_container publ_image1"></div>
+                    <div class="publication_card_info">
+                        <a class="publication_link" href=""><h3 class="publ_name">Equity associate</h3></a>
+                        <p class="publ_date">April 22</p>
+                        <div class="publ_line"></div>
+                        <p class="publ_text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                    </div>
+                </div>
+                <div class="publication_card">
+                    <div class="publ_image_container publ_image2"></div>
+                    <div class="publication_card_info">
+                        <a class="publication_link" href=""><h3 class="publ_name">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h3></a>
+                        <p class="publ_date">September 29</p>
+                        <div class="publ_line"></div>
+                        <p class="publ_text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                    </div>
+                </div>
+                <div class="publication_card">
+                    <div class="publ_image_container publ_image3"></div>
+                    <div class="publication_card_info">
+                        <a class="publication_link" href=""><h3 class="publ_name">Millennial Testament</h3></a>
+                        <p class="publ_date">August 19</p>
+                        <div class="publ_line"></div>
+                        <p class="publ_text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
