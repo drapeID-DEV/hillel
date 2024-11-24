@@ -16,7 +16,7 @@ const cssnano = require("cssnano");
 const paths = { 
   html: { 
     src: ["./app/**/*.html"], 
-    dest: "./", 
+    dest: "./docs", 
   }, 
   images: { 
     src: ["./app/images/**/*"], 
@@ -35,6 +35,11 @@ const paths = {
     dest: "./dist/", 
   }, 
 }; 
+ 
+// Copy html files 
+function copyHtml() { 
+  return src(paths.html.src).pipe(dest(paths.html.dest)); 
+} 
  
 // Optimize images(.png, .jpeg, .gif, .svg) 
 /** 
@@ -100,20 +105,21 @@ function cacheBust() {
  
 // Watch for file modification at specific paths and run respective tasks accordingly 
 function watcher() { 
-  watch(paths.html.src, series(cacheBust));
+  watch(paths.html.src, series(copyHtml, cacheBust)); 
   watch(paths.images.src, optimizeImages); 
   watch(paths.styles.src, parallel(compileStyles, cacheBust)); 
   watch(paths.scripts.src, parallel(minifyScripts, cacheBust)); 
 } 
  
 // Export tasks to make them public 
+exports.copyHtml = copyHtml; 
 exports.optimizeImages = optimizeImages; 
 exports.compileStyles = compileStyles; 
 exports.minifyScripts = minifyScripts; 
 exports.cacheBust = cacheBust; 
 exports.watcher = watcher; 
 exports.default = series( 
-  parallel(optimizeImages, compileStyles, minifyScripts), 
+  parallel(copyHtml, optimizeImages, compileStyles, minifyScripts), 
   cacheBust, 
   watcher 
 );
