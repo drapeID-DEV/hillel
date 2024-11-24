@@ -25,6 +25,55 @@ button {
   border: 0;
 }
 
+.h_logo_container {
+  box-sizing: border-box;
+  padding: 0 25px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 873px;
+  height: 100vh;
+  transform: translateX(-50%);
+  background-image: url(../images/h_logo.svg);
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.h_logo_text {
+  padding: 15px 0;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46.32px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll_svg circle {
+  color: #fff;
+  transition: all 0.2s linear;
+}
+.scroll_svg path {
+  color: #fff;
+  transition: all 0.2s linear;
+}
+
+.scroll_btn {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 30px;
+}
+.scroll_btn:hover .scroll_svg circle {
+  color: #F0145A;
+}
+.scroll_btn:hover .scroll_svg path {
+  color: #F0145A;
+}
+
 .container {
   max-width: 1600px;
   width: 100%;
@@ -46,6 +95,7 @@ button {
   width: 100%;
   margin: 0 auto;
   padding-top: 50px;
+  height: 100vh;
   margin-bottom: 60px;
 }
 .header_block {
@@ -74,33 +124,8 @@ button {
 }
 
 .logo_btn {
+  max-height: -moz-fit-content;
   max-height: fit-content;
-}
-
-.logo_btn_container {
-  display: flex;
-}
-
-.mobile_logo_container {
-  display: flex;
-  margin-bottom: 30px;
-  display: none;
-}
-
-.logo_btn::after {
-  content: "/";
-  font-size: 47px;
-  font-weight: 700;
-  line-height: 44px;
-  color: #F0145A;
-  vertical-align: top;
-  margin: 0 5px;
-}
-
-.page_name {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 400;
 }
 
 .mobile_navigation {
@@ -109,6 +134,11 @@ button {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+}
+
+.mobile_logo {
+  display: none;
+  margin-bottom: 30px;
 }
 
 .buger_menu {
@@ -166,6 +196,58 @@ button {
   border-bottom: 1px solid #F0145A;
 }
 
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+.experience_list {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 30px;
+  width: 375px;
+  padding-right: 60px;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+}
+.experience_list_item {
+  color: #B3B3BA;
+  width: 375px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46.32px;
+  text-align: right;
+  transition: all 0.3s linear;
+}
+.experience_list_item:hover {
+  color: #F0145A;
+  cursor: pointer;
+}
+.experience_list_item_active {
+  background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.experience_info {
+  max-width: 860px;
+  width: 100%;
+  color: #fff;
+}
+.experience_header {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.57px;
+}
+.experience_text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
 .services {
   padding-bottom: 60px;
 }
@@ -202,6 +284,10 @@ button {
 }
 .page_link:hover {
   color: #F0145A;
+}
+
+.service_page_link {
+  margin-bottom: 10px;
 }
 
 .service_card {
@@ -246,6 +332,79 @@ button {
   background: rgb(231, 231, 242);
   border-radius: 0px 0px 12px 12px;
   height: 10px;
+}
+
+.team_container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.team_page_link {
+  margin-bottom: 5px;
+}
+
+.face_image {
+  height: auto;
+  width: 400px;
+  background-image: url(../images/face.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.team_info {
+  background-color: #F5F5FA;
+  padding: 30px;
+  border-radius: 0px 12px 12px 0px;
+}
+
+.team_text {
+  max-width: 1140px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46.32px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.team_member {
+  color: #B3B3BA;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  margin-bottom: 5px;
+}
+
+.member_position {
+  color: #B3B3BA;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.slider_controls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+}
+
+.slider_button {
+  width: 16px;
+  height: 16px;
+  background-color: #82c8fa;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  margin-bottom: 60px;
+}
+.slider_button:hover {
+  cursor: pointer;
+  background-color: #24A3FF;
 }
 
 .clients {
@@ -323,6 +482,102 @@ button {
   background-color: #000000;
 }
 
+.publications {
+  padding: 30px 0 0 0;
+  background-color: #F5F5FA;
+}
+.publications_header {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46.32px;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 30px;
+}
+
+.publ_page_link {
+  margin-bottom: 10px;
+}
+
+.publ_cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  border-bottom: 2px solid #E6E6F0;
+  padding-bottom: 30px;
+}
+
+.publication_card {
+  overflow: hidden;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 30px);
+}
+.publication_card_info {
+  padding: 30px;
+  background-color: #fff;
+  height: 100%;
+}
+
+.publ_image_container {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.publ_image1 {
+  background-image: url(../images/publication1.png);
+}
+
+.publ_image2 {
+  background-image: url(../images/publication2.png);
+}
+
+.publ_image3 {
+  background-image: url(../images/publication3.png);
+}
+
+.publ_name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+}
+
+.publication_link {
+  transition: all 0.3s linear;
+  color: #24A3FF;
+  display: flex;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.publication_link:hover {
+  color: #F0145A;
+}
+
+.publ_date {
+  color: #B3B3BA;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  margin: 15px 0;
+}
+
+.publ_line {
+  width: 100%;
+  height: 4px;
+  background-color: #E6E6F0;
+  margin-bottom: 15px;
+}
+
+.publ_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 footer {
   background-color: #F5F5FA;
   padding: 30px 0;
@@ -388,7 +643,6 @@ footer {
   line-height: 19.5px;
   transition: all 0.3s linear;
 }
-
 .contact_email:hover {
   color: #F0145A;
 }
@@ -417,27 +671,101 @@ footer {
   .clients {
     margin-bottom: 0px;
   }
+  .h_logo_container {
+    width: 800px;
+    height: 800px;
+  }
+  .header {
+    height: 810px;
+    margin-bottom: 60px;
+  }
 }
-@media screen and (max-width: 920px) {
-  .header_info {
-    margin-bottom: 30px;
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 790px;
+  }
+  .h_logo_container {
+    width: 670px;
+    height: 768px;
+  }
+}
+@media screen and (max-width: 886px) {
+  .team_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .face_image {
+    height: 500px;
+    width: auto;
+    background-image: url(../images/face.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .team_info {
+    border-radius: 0px 0px 12px 12px;
+  }
+  .experience_list_item {
+    max-width: 375px;
+    width: 100%;
+    font-size: 23px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 900px;
   }
   .header_block {
     align-items: flex-start;
   }
-  .logo_btn_container {
+  .header_info {
+    margin-bottom: 30px;
+  }
+  .h_logo_container {
+    width: 100%;
+    height: 100vh;
+  }
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .experience_list {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    overflow-y: auto;
+    flex-direction: row;
+    border-right: 0;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 60px;
+  }
+  .experience_list_item {
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    font-size: 38px;
+    line-height: 46.32px;
+  }
+  .logo_btn {
     display: none;
   }
-  .mobile_logo_container {
-    display: flex;
+  .mobile_logo {
+    display: block;
   }
-}
-@media screen and (max-width: 768px) {
   .service_card {
     flex: 1 1 calc(50% - 60px);
   }
   .client_card {
     width: 33.333%;
+  }
+  .publication_card {
+    flex: 1 1 calc(50% - 30px);
   }
   .footer_dot {
     display: none;
@@ -460,10 +788,14 @@ footer {
 }
 @media screen and (max-width: 600px) {
   .header {
+    height: 600px;
     padding: 0;
   }
   .header_menu {
     display: none;
+  }
+  .header_block {
+    height: 700px;
   }
   .header_address {
     display: none;
@@ -480,6 +812,10 @@ footer {
     gap: 0;
     justify-content: space-between;
   }
+  .h_logo_container {
+    width: 100%;
+    height: 600px;
+  }
   .dot {
     display: none;
   }
@@ -489,11 +825,11 @@ footer {
   .main_navigation {
     display: none;
   }
-  .mobile_logo_container {
+  .mobile_logo {
     margin-bottom: 0;
     margin-left: 15px;
   }
-  .mobile_logo_container img {
+  .mobile_logo img {
     height: 60px;
   }
   .buger_menu {
@@ -506,8 +842,15 @@ footer {
 }
 @media screen and (max-width: 540px) {
   .header {
-    margin-bottom: 60px;
+    height: 600px;
     padding: 0;
+  }
+  .header_block {
+    height: 700px;
+  }
+  .h_logo_container {
+    width: 100%;
+    height: 600px;
   }
   .service_card {
     flex: 1 1 100%;
@@ -515,23 +858,35 @@ footer {
   .client_card {
     width: 50%;
   }
+  .publication_card {
+    flex: 1 1 100%;
+  }
+  .team_text {
+    max-width: 100%;
+    font-size: 25px;
+    line-height: 31.57px;
+  }
+  .publications_header {
+    font-size: 30px;
+    line-height: 36.57px;
+  }
   .services_header {
     font-size: 30px;
     line-height: 36.57px;
     margin-bottom: 30px;
   }
+  .exp_btn {
+    font-size: 30px;
+    line-height: 36.57px;
+  }
+  .experience_list {
+    padding-bottom: 30px;
+  }
   .container {
     padding: 0 30px;
   }
-  .logo_btn::after {
-    font-size: 25px;
-  }
-  .logo_btn_image {
-    max-width: 80px;
-  }
-  .page_name {
-    font-size: 24px;
-    line-height: 44px;
+  .shadow_2 {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 370px) {
@@ -556,4 +911,4 @@ footer {
   .client_card:nth-child(12) {
     display: none;
   }
-}/*# sourceMappingURL=services.css.map */
+}/*# sourceMappingURL=styles.css.map */
